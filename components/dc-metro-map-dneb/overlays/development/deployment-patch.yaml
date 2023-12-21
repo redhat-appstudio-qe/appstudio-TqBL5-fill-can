@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-dneb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-ijsd-tenant/appstudio/dc-metro-map-dneb@sha256:428a48088de039d809532d0ab0f6809cac68d57dbb89314320e008c06c18052b
+        name: my-nodejs
+        resources: {}
+status: {}
